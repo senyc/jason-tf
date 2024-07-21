@@ -1,4 +1,4 @@
-resource "linode_nodebalancer" "jason-nodebalancer" {
-    label = "jason-nodebalancer"
-    region = "us-ord"
+resource "linode_nodebalancer" "nodebalancer" {
+  label  = var.name
+  region = var.region
 }
