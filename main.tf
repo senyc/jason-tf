@@ -3,12 +3,12 @@ provider "linode" {
 }
 
 module "nodebalancer" {
-  source = "./nodebalancer/"
+  source = "./modules/nodebalancer"
   region = "os-ord"
   name   = "jason-nodebalancer"
 }
 
 module "cluster" {
-  source = "./cluster/"
+  source = "./modules/cluster/"
   name   = "jason-cluster"
 }
